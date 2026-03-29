@@ -1,0 +1,36 @@
+{
+  "name": "modern-plp",
+  "version": "1.0.0",
+  "description": "Production-ready Product Listing Page built with Next.js 14 and pure CSS Modules",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3"
+  },
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "nextjs",
+    "product-listing-page",
+    "plp",
+    "ecommerce",
+    "ssr",
+    "css-modules"
+  ],
+  "author": "ModernPLP",
+  "license": "MIT"
+}

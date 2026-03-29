@@ -1,0 +1,200 @@
+/* ============================================================
+   Elite Footer Styles (Functional & Refined)
+   ============================================================ */
+
+.footer {
+  background: var(--color-neutral-900);
+  color: white;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ── Newsletter Strip ── */
+.newsletterSection {
+  background: linear-gradient(90deg, var(--color-primary-900), #112759);
+  padding: var(--space-8) var(--container-padding);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.newsletterContent {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+}
+
+.newsletterTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+}
+
+.newsletterSubtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--text-sm);
+}
+
+.newsletterForm {
+  display: flex;
+  gap: var(--space-2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.newsletterInput {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-base);
+  flex: 1;
+}
+
+.newsletterBtn {
+  background: white;
+  color: var(--color-primary-900);
+  padding: 0 var(--space-6);
+  border-radius: var(--radius-base);
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+
+/* ── Main Footer Grid ── */
+.footerMain {
+  padding: var(--space-16) var(--container-padding);
+}
+
+.footerColumns {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  gap: var(--space-12);
+}
+
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+}
+
+.footerLogoIcon {
+  font-size: 1.5rem;
+  color: var(--color-primary-500);
+}
+
+.footerLogoText {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.footerLogoAccent {
+  color: var(--color-primary-500);
+}
+
+.brandTagline {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
+/* ── Columns Layout ── */
+.footerNavHeading {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-6);
+}
+
+.footerNavList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footerNavBtn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--text-sm);
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.footerNavBtn:hover {
+  color: white;
+  transform: translateX(4px);
+}
+
+/* ── Bottom Bar ── */
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: var(--space-8) var(--container-padding);
+}
+
+.footerBottomContent {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: var(--text-xs);
+}
+
+.bottomLinks {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.bottomBtn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.bottomBtn:hover {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .footerColumns {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletterContent {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerColumns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footerColumns {
+    grid-template-columns: 1fr;
+  }
+}
