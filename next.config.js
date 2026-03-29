@@ -5,7 +5,12 @@ const nextConfig = {
 
   // Image optimization configuration
   images: {
-    domains: ['fakestoreapi.com', 'via.placeholder.com'],
+    domains: [
+      'fakestoreapi.com', 
+      'via.placeholder.com', 
+      'images.unsplash.com', 
+      'plus.unsplash.com'
+    ],
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
